@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="main">
+    <div class="container ">
+        <h1 class="text-center text-secondary pb-4">Your projects</h1>
+        <div class="row mt-2">
+
+            <div class="card-rows">
+                <div class="card shadow border-0">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Presentation website</h5>
+                        <p class="card-text">I have recently opened my cabinet and I need a website to showcase
+                            photos from inside and prices.</p>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('client_project_view') }}">View
+                        </a>
+
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('client_project_view') }}">0
+                            bids
+                        </a>
+                    </div>
+
+                </div>
+                <div class="card shadow border-0">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Phone app for my blog</h5>
+                        <p class="card-text">I have a blog where I frequently post about economics. I need
+                            a app to connect with client on the go.</p>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('client_project_view') }}">View
+                        </a>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('client_project_view') }}">2
+                            bids
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="project-request">
+        <div class="container">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="RequestForm">
+                    <h1 class="text-center text-secondary pb-3">Add a new project</h1>
+                    <div class="Forms">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Project title" type="text">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Project summary" type="text">
+                            </div>
+                            <div class="form-group">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Maximum budget" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Maximum time" type="text">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Project description" rows="5"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Acceptance criteria" rows="5"></textarea>
+                            </div>
+
+
+                            <button class="btn btn-primary" type="submit">Add new project</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

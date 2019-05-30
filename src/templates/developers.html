@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="main">
+    <div class="container ">
+        <h1 class="text-center text-secondary">All available projects</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Presentation website</strong>
+                        <h6 class="mb-0">
+                            <div class="font-weight-bold">Website for my doctor cabinet</div>
+                        </h6>
+                        <p class="card-text mb-auto">I have recently opened my cabinet and I need a website to showcase
+                            photos from inside and prices.</p>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">Bid for
+                            this
+                            project</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">1 bid on this project</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-success">Phone app for my blog</strong>
+                        <h6 class="mb-0">
+                            <div class="font-weight-bold">I have a blog where I frequently post about economics. I need
+                                a app to connect with client on the go.
+                            </div>
+                        </h6>
+
+                        <p class="card-text mb-auto"> The app is supposed to notify my followers when I add new
+                            posts.</p>
+                        <a class="btn btn-outline-success btn-sm" href="{{ url_for('developer_project_view') }}">Bid for
+                            this
+                            project</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">2 bids on this project</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">E-commerce online store</strong>
+                        <h6 class="mb-0">
+                            <div class="font-weight-bold">I have an old outdated CMS platorm and I want to build another
+                                one more up to date.
+                            </div>
+                        </h6>
+                        <p class="card-text mb-auto"> I need a new CMS platform that I can manage and easily add new
+                            products and also use the exiting database to showcase existing products </p>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">Bid
+                            for
+                            this project</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">0 bids on this project</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-success"></strong>
+                        <h6 class="mb-0">
+                            <div class="font-weight-bold">Configurator for my curtain manufacturing business</div>
+                        </h6>
+                        <p class="card-text mb-auto">I would like an online environment which can simulate how the
+                            curtains
+                            would look on a window
+                            using the textures, colors and shapes that we provide.</p>
+                        <a class="btn btn-outline-success btn-sm" href="{{ url_for('developer_project_view') }}">Bid for
+                            this
+                            project</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">0 bids on this project</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">VR tour for my amusement park</strong>
+                        <h6 class="mb-0">
+                            <div class="font-weight-bold"> The amusement park we managed has recently added some new
+                                exciting rides and I would like to add an online VR tour of the park to my website.
+                            </div>
+                        </h6>
+
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">Bid
+                            for
+                            this project</a>
+                        <a class="btn btn-outline-primary btn-sm" role="button"
+                           href="{{ url_for('developer_project_view') }}">5 bids on this project</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

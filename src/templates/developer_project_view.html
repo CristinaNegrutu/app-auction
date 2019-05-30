@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="main">
+    <div class="container ">
+        <h1 class="text-center text-secondary pb-5">Phone app for my blog</h1>
+        <p><strong>Summary:</strong> I have a blog where I frequently post about economics. I need a app to connect with
+            client on the go.</p>
+
+        <p><strong>Description:</strong> The app is supposed to notify my followers when I add new
+            posts.</p>
+        <div>
+            <p><strong> Acceptance criteria</strong></p>
+            <ol>
+                <li>The app must be available for Google Play</li>
+                <li>It must notify users everytime I post</li>
+                <li>All articles published on blog website must be available here</li>
+                <li>The app must notify me when users add comments to post</li>
+                <li>It should allow ads</li>
+            </ol>
+
+        </div>
+        <p><strong>Maximum bugdet: </strong>2000$</p>
+        <p><strong>Maximum time: </strong>2 months</p>
+        <h4 class="pt-5">Bids on this project</h4>
+
+        <div class="card-columns">
+            <div class="card shadow border-0">
+
+                <div class="card-body">
+                    <h5 class="card-title">Maria Perez's offer</h5>
+                    <p class="card-text"><strong>Budget: </strong> 1200$</p>
+                    <p class="card-text"><strong>Time: </strong> 3 weeks</p>
+
+                    <a class="btn btn-outline-primary btn-sm" role="button"
+                       href="{{ url_for('client_project_view') }}">View developer CV
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card shadow border-0">
+
+                <div class="card-body">
+                    <h5 class="card-title">Mark Crawford's offer</h5>
+                    <p class="card-text"><strong>Budget:</strong> 1500$</p>
+                    <p class="card-text"><strong>Time:</strong> 5 weeks</p>
+                    <a class="btn btn-outline-primary btn-sm" role="button"
+                       href="{{ url_for('client_project_view') }}">View developer CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="project-request">
+        <div class="container">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="RequestForm">
+                    <h4 class="pt-5">Add a bid on this project</h4>
+                    <div class="Forms">
+                        <form>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Proposed budget" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Allocated time" type="text">
+                            </div>
+                            <label class="btn btn-success" for="my-file-selector">
+                                <input id="my-file-selector" type="file" class="d-none">
+                                Upload CV
+                            </label>
+
+                            <label class="btn btn-primary" for="my-file-selector">
+                                <input id="my-selector" type="file" class="d-none">
+                                Bid on this project
+                            </label></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
